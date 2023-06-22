@@ -1,12 +1,16 @@
 
+type GreetProps = {
+    name: string;
+}
 
 
-export const Greet = () => {
+export const Greet = (props: GreetProps) => {
 
-    
+
     return (
-        <div>
-
-        </div>
+        <>
+        <h1>Welcome back {props.name}</h1>
+        <h3>You have 10 new messages</h3>
+        </>
     )
 }
