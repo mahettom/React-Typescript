@@ -17,7 +17,7 @@ export const Greet = (props: GreetProps) => {
                 <h4>You have {props.messageCount} new messages</h4>
             </div>
         :
-        <h1>Welcome Guest</h1>
+        <h1>Welcome</h1>
         }
         </>
     )
