@@ -9,7 +9,7 @@ export const Person = (props: PersonProps) => {
 
     return (
         <>
-            <h1> {props.name.first} {props.name.last}</h1>
+            <h2> {props.name.first} {props.name.last}</h2>
         </>
 
     )
