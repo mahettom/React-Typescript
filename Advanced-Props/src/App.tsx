@@ -1,10 +1,11 @@
 import './App.css'
-import { Heading } from './components/Heading'
-import { Status } from './components/Status'
 import { Oscar } from './components/Oscar'
 import { Greet } from './components/Greet'
-import { Button } from './components/Button'
 import { Input } from './components/Input'
+import { Button } from './components/Button'
+import { Status } from './components/Status'
+import { Heading } from './components/Heading'
+import { Container } from './components/Container'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       }}/>
 
       <Input value='' handleChange={(event) => console.log(event)}/>
+      <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
     </>
   )
 }
