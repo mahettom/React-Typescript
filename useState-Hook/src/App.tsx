@@ -1,5 +1,5 @@
 import './App.css'
-import { Counter } from './components/state/Counter'
+import { Counter } from './components/state/UseReducer'
 
 
 
