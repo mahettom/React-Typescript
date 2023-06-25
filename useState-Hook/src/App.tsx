@@ -1,5 +1,5 @@
 import './App.css'
-import { Counter } from './components/state/UseReducer'
+import { Counter } from './components/state/UseReducerStrict'
 
 
 
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <Counter/>
+      <Counter/>
     </>
   )
 }
