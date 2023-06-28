@@ -4,7 +4,7 @@ type ListProps<T> = {
 }
 
 
-export const List = <T extends Record<string, never>>({items, onClick}: ListProps<T>) => {
+export const List = <T extends {}>({items, onClick}: ListProps<T>) => {
     return (
         <>
             <h2>List of items</h2>
