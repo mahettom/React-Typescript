@@ -1,10 +1,11 @@
+
 type ListProps<T> = {
     items: T[]
     onClick: (value: T) => void
 }
 
 
-export const List = <T extends {}>({items, onClick}: ListProps<T>) => {
+export const List = <T extends string | number >({items, onClick}: ListProps<T>) => {
     return (
         <>
             <h2>List of items</h2>
