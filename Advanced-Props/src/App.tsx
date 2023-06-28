@@ -6,6 +6,8 @@ import { Button } from './components/Button'
 import { Status } from './components/Status'
 import { Heading } from './components/Heading'
 import { Container } from './components/Container'
+import { Private } from './components/auth/Private'
+import { Profile } from './components/auth/Profile'
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
 
       <Input value='' handleChange={(event) => console.log(event)}/>
       <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
+
+      <Private isLoggedIn={true} component={Profile} />
     </>
   )
 }
