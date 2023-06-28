@@ -39,6 +39,24 @@ function App() {
         items={['value1', 'value2', 'value3' ]}
         onClick={(item) => console.log(item)}
       />
+
+      <List
+        items={[
+          {
+            first: 'bruce',
+            last: 'Wayne',
+          },
+          {
+            first: 'Mr',
+            last: 'Alfred',
+          },
+          {
+            first: 'Chrianstian',
+            last: 'Bale',
+          }
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </>
   )
 }
