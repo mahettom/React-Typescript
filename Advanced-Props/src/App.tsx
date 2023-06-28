@@ -27,7 +27,8 @@ function App() {
       <Input value='' handleChange={(event) => console.log(event)}/>
       <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
 
-      <Private isLoggedIn={true} component={Profile} />
+      <Private isLoggedIn={true} Component={Profile} />
+
     </>
   )
 }
