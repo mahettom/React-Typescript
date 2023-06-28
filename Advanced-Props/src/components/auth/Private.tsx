@@ -1,6 +1,7 @@
 import { ProfileProps } from "./Profile";
 import { Login } from "./Login";
 
+
 type PrivateProps = {
     isLoggedIn: boolean
     Component: React.ComponentType<ProfileProps>

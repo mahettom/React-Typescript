@@ -28,7 +28,6 @@ function App() {
       <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
 
       <Private isLoggedIn={true} Component={Profile} />
-
     </>
   )
 }
