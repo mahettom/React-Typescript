@@ -8,6 +8,7 @@ import { Heading } from './components/Heading'
 import { Container } from './components/Container'
 import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
+import { List } from './components/generics/List'
 
 function App() {
 
@@ -28,6 +29,16 @@ function App() {
       <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
 
       <Private isLoggedIn={true} Component={Profile} />
+
+      <List
+        items={[1 , 2, 3 ]}
+        onClick={(item) => console.log(item)}
+      />
+
+      <List
+        items={['value1', 'value2', 'value3' ]}
+        onClick={(item) => console.log(item)}
+      />
     </>
   )
 }
