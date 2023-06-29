@@ -3,6 +3,7 @@ import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
 import { List } from './components/generics/List'
 import { RandomNumber } from './components/restriction/RandomNumber'
+import { Toast } from './components/templateLiterals/Toast'
 // import { Container } from './components/Container'
 // import { Heading } from './components/Heading'
 // import { Status } from './components/Status'
@@ -32,6 +33,8 @@ function App() {
       <Private isLoggedIn={true} Component={Profile} />
 
       <RandomNumber value={10} isPositive />
+
+      <Toast position='left-center' />
 
       <List
         items={[1 , 2, 3 ]}
