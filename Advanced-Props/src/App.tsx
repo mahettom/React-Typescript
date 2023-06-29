@@ -1,20 +1,21 @@
 import './App.css'
-import { Oscar } from './components/Oscar'
-import { Greet } from './components/Greet'
-import { Input } from './components/Input'
-import { Button } from './components/Button'
-import { Status } from './components/Status'
-import { Heading } from './components/Heading'
-import { Container } from './components/Container'
 import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
 import { List } from './components/generics/List'
+import { RandomNumber } from './components/restriction/RandomNumber'
+// import { Container } from './components/Container'
+// import { Heading } from './components/Heading'
+// import { Status } from './components/Status'
+// import { Button } from './components/Button'
+// import { Oscar } from './components/Oscar'
+// import { Greet } from './components/Greet'
+// import { Input } from './components/Input'
 
 function App() {
 
   return (
     <>
-      <Greet name='Tom' isLoggedIn={false} />
+      {/* <Greet name='Tom' isLoggedIn={false} />
       <Status status='loading' />
 
       <Oscar>
@@ -26,9 +27,11 @@ function App() {
       }}/>
 
       <Input value='' handleChange={(event) => console.log(event)}/>
-      <Container styles={{border: '1rem solid black', padding: '1rem'}}/>
+      <Container styles={{border: '1rem solid black', padding: '1rem'}}/> */}
 
       <Private isLoggedIn={true} Component={Profile} />
+
+      <RandomNumber value={10} isPositive />
 
       <List
         items={[1 , 2, 3 ]}
@@ -40,7 +43,7 @@ function App() {
         onClick={(item) => console.log(item)}
       />
 
-      <List
+      {/* <List
         items={[
           {
             first: 'bruce',
@@ -56,7 +59,7 @@ function App() {
           }
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
     </>
   )
 }
